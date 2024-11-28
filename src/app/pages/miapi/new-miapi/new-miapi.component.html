@@ -1,0 +1,43 @@
+<div class="header">
+    <img src="https://happyhillshop.com/image/catalog/marcas/Ranma_%C2%BD_rebuilt_logo_in_vector_graphics.png"
+        class="img-fluid">
+  </div>
+  <div class="container">
+    <h2>Agregar Nuevo Personaje</h2>
+    <form [formGroup]="nuevoForm" (ngSubmit)="postForm()">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="name" class="form-control" formControlName="nombre" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="genero" class="form-label">Género</label>
+        <input type="text" id="genero" class="form-control" formControlName="genero" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="edad" class="form-label">Edad</label>
+        <input type="number" id="edad" class="form-control" formControlName="edad" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="descripcion" class="form-label">Descripción</label>
+        <textarea id="descripcion" class="form-control" formControlName="descripcion"></textarea>
+      </div>
+  
+      <div class="mb-3">
+        <label for="imagen" class="form-label">Imagen (URL)</label>
+        <input type="text" id="imagen" class="form-control" formControlName="imagen" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary mb-3">Agregar</button>
+      <button
+        type="button"
+        class="btn btn-danger mb-3 ms-4"
+        [routerLink]="['/miapi/list']" routerLinkActive="router-link-active" 
+      >
+        Cancelar
+      </button>
+      
+    </form>
+  </div>

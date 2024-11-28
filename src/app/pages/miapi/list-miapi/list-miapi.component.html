@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="header">
+      <img src="https://happyhillshop.com/image/catalog/marcas/Ranma_%C2%BD_rebuilt_logo_in_vector_graphics.png"
+        class="img-fluid">
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row row-cols-4">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+    
+              <th scope="col">Nombre</th>
+              <th scope="col">Edad</th>
+              <th scope="col">Género</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Imagen</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listapi && listapi.ranma && listapi.ranma.length > 0">
+            <tr *ngFor="let ranmaData of listapi.ranma" (click)="editarRanma(ranmaData._id)">
+                <td>{{ranmaData.nombre}}</td>
+                <td>{{ranmaData.edad}}</td>
+                <td>{{ranmaData.genero}}</td>
+                <td>{{ranmaData.descripcion}}</td>
+                <td><img src={{ranmaData.imagen}} class="card-img-top fixed-img"></td>
+            </tr>
+        </tbody>    
+        </table>
+      </div>
+    </div>
+    
+    <div class="botones">
+      <div class="row gap-2 justify-content-md-start">
+        <div class="col-1 mb-3">
+          <button type="button" class="btn btn-success" [routerLink]="['/miapi/create']" routerLinkActive="router-link-active" >
+            Nuevo
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </div>

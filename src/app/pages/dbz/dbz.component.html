@@ -1,0 +1,16 @@
+<div class="row-6">
+    <picture>
+        <source srcset="sourceset" type="png" />
+        <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f82cc357-e354-4ef7-8b2d-647f6f756800/d8vx5uc-507852a3-35ce-46cd-8a58-60f31964a978.png/v1/fill/w_1024,h_494/dragon_ball___logo_by_shikomt_by_shikomt_d8vx5uc-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDk0IiwicGF0aCI6IlwvZlwvZjgyY2MzNTctZTM1NC00ZWY3LThiMmQtNjQ3ZjZmNzU2ODAwXC9kOHZ4NXVjLTUwNzg1MmEzLTM1Y2UtNDZjZC04YTU4LTYwZjMxOTY0YTk3OC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.KKxzn5nHk0NC9bReCLq5xZWX3BOFDqLXsqsPH-DVeis"
+            class="img-fluid"
+            alt="image desc"
+        />
+    </picture>
+</div>
+<div class="row">
+    <dbz-search (eventSearch)="searchPersonaje($event)"/>
+</div>
+<dbz-paginacion (eventNewDbz)="setNewPersonaje($event)"/>
+<dbz-card [dbzAll]="dbzPersonajes"/>
+<dbz-paginacion (eventNewDbz)="setNewPersonaje($event)"/>
