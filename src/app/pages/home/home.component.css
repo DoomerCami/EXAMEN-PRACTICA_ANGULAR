@@ -1,0 +1,61 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/775140.gif'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+  }
+  
+  h2 {
+    color: #00ccff; 
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .custom-carousel {
+    width: 80%;  /* Cambia al tamaño deseado */
+    max-width: 10000px; /* Límite de ancho opcional */
+    height: 400px; /* Ajusta la altura según necesidad */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+  
+  .custom-carousel .carousel-inner img {
+    height: 100%;  /* Asegura que las imágenes ocupen toda la altura */
+    object-fit: cover;  /* Ajusta la imagen sin deformarla */
+  }
+  
+  .card-img-top {
+    height: 500px;
+    object-fit: cover; /* Ajusta la imagen para que encaje sin deformarse */
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .card {
+    border: 2px solid #ffd7f0; /* Cambia el borde de la tarjeta */
+  }
+  
+  .card-title {
+    font-size: 1.5rem; /* Aumenta el tamaño del título */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    color: #333; /* Cambia el color del texto */
+  }
+  

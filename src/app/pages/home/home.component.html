@@ -1,104 +1,174 @@
 <div class="row justify-content-center width-auto">
-    <h1 class="text-center">¡Bienvenido a Angular!</h1>
-    <h3 class="text-center">En esta página encontrarás información sobre: </h3>
-    <div class="col-4 p-4">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+    <h1 class="text-center">PUBLIC APIS</h1>
+    <div id="carouselExampleCaptions" class="carousel slide custom-carousel">
+        <!-- Contenido del carrusel -->
+        <div class="col-12 p-4">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button> <!-- Botón adicional para Cócteles -->
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- Ranma 1/2 -->
+                    <div class="carousel-item active">
+                        <img src="https://64.media.tumblr.com/28933e1ba8b2f4437ba34a73e193270c/069e3ea494de9161-d5/s640x960/627ed3bbefdac96571a4d0d65ea35d4716a30357.gif"
+                            class="d-block w-100" alt="Ranma 1/2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RANMA 1/2</h5>
+                            <p class="text-dark bg-light" style="--bs-bg-opacity: .5;">Información sobre tus personajes
+                                más
+                                queridos de Ranma 1/2</p>
+                        </div>
+                    </div>
+
+                    <!-- Dragon Ball Z -->
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/originals/0b/0a/ff/0b0aff39d518946c02558aa01abd762d.gif"
+                            class="d-block w-100" alt="Dragon Ball Z">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Dragon Ball Z</h5>
+                            <p class="text-dark bg-light" style="--bs-bg-opacity: .5;">Información sobre todos tus
+                                personajes favoritos de Dragon Ball Z</p>
+                        </div>
+                    </div>
+
+                    <!-- Pokémon -->
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/originals/e8/f0/fd/e8f0fd891e5edcaf8f338a6c76fd00c4.gif"
+                            class="d-block w-100" alt="Pokémon">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pokémon</h5>
+                            <p class="text-dark bg-light" style="--bs-bg-opacity: .5;">Toda la información necesaria
+                                sobre
+                                Pokémon</p>
+                        </div>
+                    </div>
+
+                    <!-- Cócteles -->
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/foto-gratis/cocteles-frescos-hielo-limon-lima-frutas-ia-generativa_188544-12370.jpg"
+                            class="d-block w-100" alt="Cócteles">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cócteles</h5>
+                            <p class="text-dark bg-light" style="--bs-bg-opacity: .5;">Toda la información necesaria
+                                sobre
+                                cócteles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="https://m.media-amazon.com/images/S/pv-target-images/334f00b53cf3ef848ea7048b25711bc98e8236ce1685a096990c80d0965835ea.png"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Dragon Ball Z</h5>
-              <p class="text-dark bg-light" style="--bs-bg-opacity: .5;">
-                Información sobre tus personajes favoritos de DBZ
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://es.web.img2.acsta.net/pictures/14/07/18/10/57/567741.jpg"
-              class="d-flex w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-dark">Pokemon</h5>
-              <p class="text-dark bg-light" style="--bs-bg-opacity: .5;">
-                Información sobre todos tus pokemones
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://www.lazayafruits.com/es/wp-content/uploads/sites/2/2017/03/productos-para-cocteles.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Cocteles</h5>
-              <p class="text-dark bg-light" style="--bs-bg-opacity: .5;">
-                Toda la Información necesaria sobre cocteles
-              </p>
-            </div>
-          </div>
+
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">
+                Bienvenido a nuestra aplicación, donde la magia de Angular nos permite integrar y explorar múltiples
+                APIs, brindando acceso a datos fascinantes de diferentes mundos. Desde personajes icónicos hasta
+                datos interesantes, Angular ofrece una plataforma poderosa para crear aplicaciones dinámicas y
+                escalables.
+            </p>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col justify-content-center">
-        <p>
-            Angular es un Framework de JavaScript de código abierto escrito en TypeScript. Su objetivo principal es desarrollar aplicaciones de una sola página. Google se encarga del mantenimiento y constantes actualizaciones de mejoras para este framework.
-        </p>
-      </div>
+
     </div>
-  </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+        <!-- Tarjeta API de Ranma 1/2 -->
+        <div class="col">
+            <div class="card">
+                <img src="https://pa1.narvii.com/6829/73de358aea4a24f1c5e96ffc228e78744861aa59_hq.gif"
+                    class="card-img-top" alt="Ranma 1/2">
+                <div class="card-body">
+                    <h5 class="card-title">API de Ranma 1/2</h5>
+                    <p class="card-text">
+                        La API de Ranma 1/2 se creó para celebrar la icónica serie de anime y manga de Rumiko Takahashi.
+                        Permite explorar personajes, transformaciones y datos curiosos de esta serie llena de comedia,
+                        romance y artes marciales.
+                    </p>
+                    <p><strong>Motivación:</strong> La API nació del amor por esta serie clásica y su mezcla de humor y
+                        acción.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta API de Dragon Ball Z -->
+        <div class="col">
+            <div class="card">
+                <img src="https://media1.tenor.com/m/RzSPDIqkgoIAAAAC/goku-dragon-ball-z.gif" class="card-img-top"
+                    alt="Dragon Ball Z">
+                <div class="card-body">
+                    <h5 class="card-title">API de Dragon Ball Z</h5>
+                    <p class="card-text">
+                        La API de Dragon Ball Z permite a los fans sumergirse en el mundo de Goku, Vegeta y
+                        los guerreros Z, explorando personajes, sagas y transformaciones.Cada batalla tiene una carga
+                        emocional que evolucionen a través del tiempo.
+                    </p>
+                    <p><strong>Motivación:</strong> Rinde homenaje a una de las series más influyentes del anime y su
+                        legado épico.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta API de Cócteles -->
+        <div class="col">
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/53/79/2f/53792fd6d2de4ebe3cc26eaf0e44e372.gif"
+                    class="card-img-top" alt="Cócteles">
+                <div class="card-body">
+                    <h5 class="card-title">API de Cócteles</h5>
+                    <p class="card-text">
+                        La API de Cócteles ofrece recetas de bebidas clásicas y modernas, proporcionando detalles sobre
+                        ingredientes y métodos de preparación.
+                    </p>
+                    <p><strong>Motivación:</strong> Facilitar a los usuarios descubrir y preparar cócteles en casa de
+                        manera sencilla.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta API de Pokémon -->
+        <div class="col">
+            <div class="card">
+                <img src="https://media.tenor.com/Cszm4J2XjMAAAAAd/pokemon.gif" class="card-img-top" alt="Pokémon">
+                <div class="card-body">
+                    <h5 class="card-title">API de Pokémon</h5>
+                    <p class="card-text">
+                        La API de Pokémon permite explorar cientos de Pokémon, sus tipos, habilidades y evoluciones,
+                        acercando la experiencia a los fans.
+                    </p>
+                    <p><strong>Motivación:</strong> Proveer a los entrenadores una herramienta para conocer y organizar
+                        sus equipos Pokémon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-2">© 2024 Mi Página de APIs. Todos los derechos reservados.</p>
+            <p class="mb-0">Desarrollado con ❤️ usando Angular</p>
+            <div>
+                <a href="https://github.com/DoomerCami" target="_blank" class="text-white">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
